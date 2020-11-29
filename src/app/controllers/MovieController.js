@@ -4,7 +4,7 @@ import Director from '../models/Director';
 
 class MovieController {
   async store(req, res) {
-    if(!!!req.file) {
+    if (!req.file) {
       return res.status(400).json({ error: 'Image is required' });
     }
 
@@ -29,21 +29,23 @@ class MovieController {
       return res.status(400).json({ error: errorMessage });
     }
 
-    const directorExists = await Director.findByPk(Number(req.body.director_id));
+    const directorExists = await Director.findByPk(
+      Number(req.body.director_id),
+    );
 
-    if(!directorExists) {
-      return res.status(400).json({error: 'Director does not exist'});
+    if (!directorExists) {
+      return res.status(400).json({ error: 'Director does not exist' });
     }
 
     const movieData = {
       image: req.file.filename,
       name: req.body.name,
       director_id: Number(req.body.director_id),
-    }
+    };
 
     await Movie.create(movieData);
 
-    res.json(movieData);
+    return res.json(movieData);
   }
 
   async update(req, res) {
@@ -75,19 +77,21 @@ class MovieController {
       return res.status(400).json({ error: 'Movie does not exist' });
     }
 
-    const directorExists = await Director.findByPk(Number(req.body.director_id));
+    const directorExists = await Director.findByPk(
+      Number(req.body.director_id),
+    );
 
-    if(!directorExists) {
-      return res.status(400).json({error: 'Director does not exist'});
+    if (!directorExists) {
+      return res.status(400).json({ error: 'Director does not exist' });
     }
 
     const movieData = {
       name: req.body.name,
       director_id: Number(req.body.director_id),
-    }
+    };
 
-    if(req.file) {
-      movieData['image'] = req.file.filename;
+    if (req.file) {
+      movieData.image = req.file.filename;
     }
 
     const { name, image } = await movie.update(movieData);

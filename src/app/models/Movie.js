@@ -15,7 +15,7 @@ class Movie extends Model {
       },
       {
         sequelize,
-      }
+      },
     );
 
     return this;
@@ -24,7 +24,7 @@ class Movie extends Model {
   static associate(models) {
     this.belongsTo(models.Director, {
       foreignKey: 'director_id',
-      as: 'director'
+      as: 'director',
     });
   }
 }

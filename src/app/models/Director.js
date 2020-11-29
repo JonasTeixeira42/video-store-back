@@ -8,7 +8,7 @@ class Director extends Model {
       },
       {
         sequelize,
-      }
+      },
     );
 
     return this;
