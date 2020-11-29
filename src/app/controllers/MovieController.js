@@ -15,7 +15,7 @@ class MovieController {
         .required('Name is required')
         .min(3, 'Minimum value 3'),
       director_id: Yup.number()
-        .typeError('Director ID must be a number')
+        .typeError('Director ID is required')
         .positive('Director ID must be positive')
         .integer('Director ID must be an integer')
         .required('Director ID is required'),
