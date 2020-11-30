@@ -1,6 +1,6 @@
 # Descrição do Projeto
 
-Essa é uma aplicação desenvolvida em Node.js, faz parte de um conjunto de desafios para estudos. A aplicação tem por objetivo, gerenciar um funcionamento de uma academia, envios de e-mail para novas matriculas, fazendo um resumo do plano escolhido, preco, duração do plano. autenticação JWT, cadastro de usuários, upload de arquivos e fichas de treinos. O desafio também possui um front-end feito em React e mobile usando React-Native.
+Essa é uma aplicação desenvolvida em Node.js, faz parte do teste técnico para empresa Soitic. A aplicação tem por objetivo, gerenciar um funcionamento locadora, podendo fazer o cadastro dos filmes que esta pertence e os diretores destes filme.
 
 # Instalação
 
