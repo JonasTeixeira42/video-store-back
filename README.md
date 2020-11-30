@@ -32,4 +32,5 @@ executar comando **yarn dev**
 
 - [Cadastrar Filmes](doc/movie/create_movie.md) : `POST /movies`
 - [Consultar Filmes](doc/movie/get_all_movies.md) : `GET /movies`
-- [Consultar Diretores](doc/movie/get_all_directors.md) : `GET /movies`
+- [Atualizar Diretor](doc/movie/update_movie.md) : `PUT /movies/{id}`
+- [Deletar Diretor](doc/movie/delete_movie.md) : `DELETE /movies/{id}`
