@@ -27,3 +27,9 @@ executar comando **yarn dev**
 
 - [Cadastrar Diretor](doc/director/create_director.md) : `POST /directors`
 - [Consultar Diretores](doc/director/get_all_directors.md) : `GET /directors`
+
+## Movies
+
+- [Cadastrar Filmes](doc/movie/create_movie.md) : `POST /movies`
+- [Consultar Filmes](doc/movie/get_all_movies.md) : `GET /movies`
+- [Consultar Diretores](doc/movie/get_all_directors.md) : `GET /movies`
