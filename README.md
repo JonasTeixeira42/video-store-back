@@ -9,6 +9,8 @@ Essa é uma aplicação desenvolvida em Node.js, faz parte do teste técnico par
 - Executar o comando **docker start soitic**
 - Executar o comando **yarn sequelize db:migrate**
 
+**Informações sobre o banco está [aqui](src/config/database.js)**
+
 # Rodar projeto
 
 executar comando **yarn dev**
