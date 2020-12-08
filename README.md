@@ -4,12 +4,10 @@ Essa é uma aplicação desenvolvida em Node.js, faz parte do teste técnico par
 
 # Instalação
 
-Executar o comando **yarn install**
-
-**Em caso de erro, executar os seguintes passos**
-
-- **yarn sequelize db:migrate**
-- criar arquivo **.env** e preenche-lo seguindo exemplo do arquivo **.env.example**
+- Executar o comando **yarn install**
+- Executar o comando **docker run --name soitic -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres**
+- Executar o comando **docker start soitic**
+- Executar o comando **yarn sequelize db:migrate**
 
 # Rodar projeto
 
