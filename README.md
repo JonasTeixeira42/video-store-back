@@ -1,6 +1,6 @@
 # Descrição do Projeto
 
-Essa é uma aplicação desenvolvida em Node.js, faz parte do teste técnico para empresa Soitic. A aplicação tem por objetivo, gerenciar um funcionamento locadora, podendo fazer o cadastro dos filmes que esta pertence e os diretores destes filme.
+Essa é uma aplicação desenvolvida em Node.js, faz parte da aplicação back-end do projeto 'Locadora'. A aplicação tem por objetivo, gerenciar um funcionamento locadora, podendo fazer o cadastro dos filmes que esta pertence e os diretores destes filme.
 
 # Instalação
 
